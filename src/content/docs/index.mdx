@@ -1,0 +1,28 @@
+---
+title: discover rex
+description: a fresh approach to building for the web platform
+template: splash
+hero:
+  tagline: a fresh approach to building for the web platform
+  image:
+    file: ../../assets/rexie.webp
+  actions:
+    - text: Fast Start Guide
+      link: /guides/explainer/
+      icon: right-arrow
+      variant: primary
+    - text: CLI Reference
+      link: /cli/run/
+      icon: right-arrow
+      variant: secondary
+---
+
+import { Tabs, TabItem, LinkCard } from '@astrojs/starlight/components';
+
+## Quick Install
+
+<Tabs>
+	<TabItem label="npm"><h4>```npx create-rex-app@latest```</h4></TabItem>
+	<TabItem label="pnpm"><h4>```pnpm create rex-app@latest```</h4></TabItem>
+	<TabItem label="yarn"><h4>```yarn create rex-app@latest```</h4></TabItem>
+</Tabs>
