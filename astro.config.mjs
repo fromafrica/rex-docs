@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'rex docs',
+			title: 'rex',
 			social: {
 				github: 'https://github.com/fromafrica/rex',
 				twitter: 'https://twitter.com/createrexapp',
@@ -29,7 +29,14 @@ export default defineConfig({
 				},
 				{
 					label: 'Project',
-					autogenerate: { directory: 'project' },
+					items: [
+						//{ label: 'Blog', link: 'https://blog.rex.rs/' },
+						{ label: 'Roadmap', link: '/project/roadmap/' },
+						{ label: 'Contribute', link: '/project/contribute/' },
+						{ label: 'Community', link: '/project/community/' },
+						{ label: 'License', link: '/project/license/' },
+						{ label: 'Credits', link: '/project/credits/' },
+					],
 				},
 			],
 		}),
